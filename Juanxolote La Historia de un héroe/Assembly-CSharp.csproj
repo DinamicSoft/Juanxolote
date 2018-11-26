@@ -61,18 +61,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\MarioController.cs" />
+    <Compile Include="Assets\Scripts\parallax.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Git/Juanxolote/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Git/Juanxolote/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Git/Juanxolote/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/eduar/Documents/Cuatri 4/Juanjolote Game/Git/Juanxolote/Juanxolote La Historia de un héroe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

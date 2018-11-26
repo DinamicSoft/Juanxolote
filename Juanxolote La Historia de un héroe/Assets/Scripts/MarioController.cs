@@ -29,14 +29,28 @@ public class MarioController : MonoBehaviour {
         {
             if (Input.GetKey("left"))
             {
-                rb2d.AddForce(new Vector2(-150f, 0));
+                if (Input.GetKey("c"))
+                {
+                    rb2d.AddForce(new Vector2(-220f, 0));
+                }
+                else
+                {
+                    rb2d.AddForce(new Vector2(-150f, 0));
+                }
                 //gameObject.transform.Translate(-10 * Time.deltaTime, 0, 0);
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
                 anim.Play("Walk");
             }
             if (Input.GetKey("right"))
             {
-                rb2d.AddForce(new Vector2(150f, 0));
+                if (Input.GetKey("c"))
+                {
+                    rb2d.AddForce(new Vector2(220f, 0));
+                }
+                else
+                {
+                    rb2d.AddForce(new Vector2(150f, 0));
+                }
                 //gameObject.transform.Translate(10 * Time.deltaTime, 0, 0);
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
                 anim.Play("Walk");
