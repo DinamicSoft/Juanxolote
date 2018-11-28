@@ -7,10 +7,14 @@ public class MarioController : MonoBehaviour {
     public Rigidbody2D rb2d;
     public Animator anim;
     private bool IsOnTheFloor;
+    public static MarioController sherdInstance;
+    private gargajoController gc;
+
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sherdInstance = this;
     }
 
     // Use this for initialization
@@ -65,9 +69,11 @@ public class MarioController : MonoBehaviour {
             {
                 anim.Play("Idle");
             }
-            
+            if (Input.GetKey("v"))
+            {
+                gc.sharedInstance.generar();
+            }   
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

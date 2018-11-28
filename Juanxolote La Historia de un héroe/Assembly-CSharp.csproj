@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\gargajoController.cs" />
+    <Compile Include="Assets\Scripts\gargajoVelocity.cs" />
     <Compile Include="Assets\Scripts\MarioController.cs" />
     <Compile Include="Assets\Scripts\parallax.cs" />
     <Reference Include="UnityEditor.StandardEvents">
