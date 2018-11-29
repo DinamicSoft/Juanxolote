@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class gargajoController : MonoBehaviour {
     public GameObject gargajo;
-    public gargajoController sharedInstance;
     void Awake()
     {
-        this.sharedInstance = this;
+
+    }
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown("v"))
+        {
+            generar();
+        }
     }
 
     public void generar()
     {
-        Instantiate(gargajo, new Vector3(MarioController.sherdInstance.rb2d.position.x+0.3f, MarioController.sherdInstance.rb2d.position.y, 0), Quaternion.identity);
+        Instantiate(gargajo, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z), Quaternion.identity);
     }
 }

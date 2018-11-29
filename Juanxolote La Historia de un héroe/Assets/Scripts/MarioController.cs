@@ -7,13 +7,15 @@ public class MarioController : MonoBehaviour {
     public Rigidbody2D rb2d;
     public Animator anim;
     private bool IsOnTheFloor;
+    public bool derecha;
     public static MarioController sherdInstance;
-    private gargajoController gc;
+    
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        derecha = true;
         sherdInstance = this;
     }
 
@@ -44,6 +46,7 @@ public class MarioController : MonoBehaviour {
                 //gameObject.transform.Translate(-10 * Time.deltaTime, 0, 0);
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
                 anim.Play("Walk");
+                derecha = false;
             }
             if (Input.GetKey("right"))
             {
@@ -58,6 +61,7 @@ public class MarioController : MonoBehaviour {
                 //gameObject.transform.Translate(10 * Time.deltaTime, 0, 0);
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
                 anim.Play("Walk");
+                derecha = true;
             }
             if (Input.GetKeyDown("up"))
             {
@@ -69,10 +73,7 @@ public class MarioController : MonoBehaviour {
             {
                 anim.Play("Idle");
             }
-            if (Input.GetKey("v"))
-            {
-                gc.sharedInstance.generar();
-            }   
+              
         }
     }
 

@@ -710,7 +710,6 @@ GameObject:
   m_Component:
   - component: {fileID: 990667638}
   - component: {fileID: 990667639}
-  - component: {fileID: 990667640}
   m_Layer: 0
   m_Name: gargajoGenerator
   m_TagString: Untagged
@@ -743,27 +742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gargajo: {fileID: 1005086085770014, guid: 095bd75fb2eb0b943b46b58961ed2a47, type: 2}
-  sharedInstance: {fileID: 0}
---- !u!50 &990667640
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 990667637}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1038302186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +1873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1992792828}
   anim: {fileID: 1992792827}
+  derecha: 0
 --- !u!1 &2126870769
 GameObject:
   m_ObjectHideFlags: 0
