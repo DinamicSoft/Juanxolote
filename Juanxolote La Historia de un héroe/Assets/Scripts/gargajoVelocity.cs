@@ -32,11 +32,11 @@ public class gargajoVelocity : MonoBehaviour {
 
         if (direccion == "derecha")
         {
-            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 0.3f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 0.15f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
         }
         else
         {
-            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x - 0.3f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x - 0.15f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
