@@ -12,16 +12,16 @@ public class gargajoVelocity : MonoBehaviour {
         this.rb2d = GetComponent<Rigidbody2D>();
     }
     void Start () {
-        Destroy(this.gameObject, 10f);
+        Destroy(this.gameObject, 8f);
         if (MarioController.sherdInstance.derecha)
         {
             direccion = "derecha";
-            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 0.7f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 1.5f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
         }
         else
         {
             direccion = "izquierda";
-            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x - 0.7f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x - 1.5f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
             this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         //this.rb2d.AddForce(new Vector2(30f, 3f));
