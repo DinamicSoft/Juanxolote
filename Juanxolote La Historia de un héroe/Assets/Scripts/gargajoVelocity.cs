@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class gargajoVelocity : MonoBehaviour {
-    private Rigidbody2D rb2d;
-    float incremento = 0.3f;
+    //private Rigidbody2D rb2d;
+    //float incremento = 0.3f;
+    public AudioSource audioS;
     string direccion; 
     // Use this for initialization
     private void Awake()
     {
-        this.rb2d = GetComponent<Rigidbody2D>();
+        //this.rb2d = GetComponent<Rigidbody2D>();
+        audioS = GetComponent<AudioSource>();
+        audioS.Play();
     }
     void Start () {
         Destroy(this.gameObject, 8f);
-        if (MarioController.sherdInstance.derecha)
+        if (ControlDeJugador.sherdInstance.derecha)
         {
             direccion = "derecha";
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 1.5f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);

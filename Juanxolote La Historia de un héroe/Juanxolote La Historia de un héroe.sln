@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juanxolote La Historia de un héroe", "Assembly-CSharp.csproj", "{C593DBB4-11DB-4A38-75FB-C606F3352341}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{C593DBB4-11DB-4A38-75FB-C606F3352341}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,6 +7,7 @@ TagManager:
   - ground
   - gargajo
   - basura
+  - "da\xF1ino"
   layers:
   - Default
   - TransparentFX
